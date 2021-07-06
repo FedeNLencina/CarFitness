@@ -1,0 +1,10 @@
+/*
+font-family: 'Cormorant Garamond', serif; Para titulos.
+font-family: 'Montserrat Alternates', sans-seri Para contenido.
+*/
+
+h1{
+    color: brown;
+    font-family: 'Cormorant Garamond', serif; 
+}
+
