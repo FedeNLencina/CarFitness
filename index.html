@@ -11,14 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat+Alternates:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-   
-    <div>
+    
+    <div class="titulo">
         <h1>Comenza a superarte y lograr el cambio que siempre buscaste!</h1>
-      
-      
+        <img src="Images/Logo.png" alt="Logo" id="logo">
+    
+    </div>
+
+    <div class="navbar">
+
         <nav>
-            <img src="Images/Logo.png" alt="Logo" id="perfil">
-            <ul> 
+            <ul class ="elementos"> 
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -26,7 +29,7 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                <a href="#contacto">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </li>
                 <li>
                     <a href="#rutinas">Entrenamientos</a>
@@ -36,54 +39,53 @@
                 </li>
             </ul>
         </nav>
-
-
+        
     </div>
 
-    <div id="about" class="hero">
+    <div class="hero">
         <h2>Carmela Tripodi</h2> 
 
         <img id="perfil" src="Images/About.png" alt="Carmela Tripodi">
         
-        <p>Personal trainer desde 2020, guardavidas y estudiante de profesorado de Ed.Fisica Nacional. Mi objetivo es que puedas disfrutar de los beneficios que tiene para el cuerpo y para la mente, contar 
+        <p id="about">Personal trainer desde 2020, guardavidas y estudiante de profesorado de Ed.Fisica Nacional. Mi objetivo es que puedas disfrutar de los beneficios que tiene para el cuerpo y para la mente, contar 
             con una rutina de entrenamiento que te mantenga en actividad. El cuerpo es la máquina más maravillosa de la creación y
             mantenerlo saludable, es un pilar fundamental. Personalizacion de entrenamientos personales, grupales y funcionales.
             Animate, sumate a entrenar juntos.</p>
-            
-            <ul>
-                <li>
-                    Armo tu plan de entrenamiento según objetivos.
-                </li> 
-                <li>
-                    Clases personalizadas.
-                </li>
-                <li>
-                    Clases Grupales.
-                </li>
-                <li>
-                    Entrenamiento para todas las edades.
-                </li>
-            </ul> 
+    
+        <ul id="propuestas">
+            <li class= "propuesta primera">
+                Armo tu plan de entrenamiento según objetivos.
+            </li> 
+            <li class= "propuesta segunda">
+                Clases personalizadas.
+            </li>
+            <li class= "propuesta tercera">
+                Clases Grupales.
+            </li>
+            <li class= "propuesta cuarta">
+                Entrenamiento para todas las edades.
+            </li>
+        </ul> 
 
         <a href="#contacto">Contactame y comenza a superarte!</a>
     </div> 
     
-    <div id="rutinas" class="seccion_entrenamientos">
+    <div id="rutinas">
         <h2>Entrenamientos</h2>
 
-        <div class="Entrenamientos">
+        <div class="entrenamientos personalizado">
             <h3>Personalizados</h3>
-            <img  id="foto1" src="Images/Personalizado.png" alt="Personalizado">
+            <img  class="foto" src="Images/Personalizado.png" alt="Personalizado">
         </div>
 
-        <div class="Entrenamientos">
+        <div class="entrenamientos grupal">
              <h3>Grupales</h3>
-             <img id="foto2" src="Images/Grupales.png" alt="Personalizado">
+             <img class="foto" src="Images/Grupales.png" alt="Grupales">
         </div>
 
-        <div class="Entrenamientos">
+        <div class="entrenamientos funcional">
             <h3>Funcionales</h3>
-            <img id="foto3" src="Images/Funcional.png" alt="Personalizado">
+            <img class="foto" src="Images/Funcional.png" alt="Fun">
         </div>
     </div>
     
@@ -112,6 +114,8 @@
         
             <label>Seleccione fecha y horario a gusto</label>
             <input type="datetime-local" name="Fecha">
+            <br>
+            <button>Reservar</button>
     
         </form>
     
