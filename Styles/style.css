@@ -12,8 +12,13 @@ font-family: 'Montserrat Alternates', sans-seri; Para Titulos.
 body{
     background-color: darkgray;
 }
+
 .titulo{
-   background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*background-color: cadetblue;*/
+    background-image: url("/Images/About.png");
 }
 
 #logo{
@@ -22,7 +27,7 @@ body{
 h1{
     color: indigo;
     font-family: 'Montserrat Alternates', sans-seri; 
-    border: 10px solid rgb(198, 205, 219);
+    
 }
 
 h2{
@@ -61,11 +66,18 @@ li a{
     border-radius: 50%;
 }
 
+#propuestas{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+
 .propuesta{
     border: 10px solid darkslategrey;
     border-radius: 10px;
+    margin-top: 10px;
 }
-
 #rutinas{
     background-color: dimgrey;
 }
@@ -88,7 +100,12 @@ footer{
     background-color: coral;
 }
 
-.elementos a:link, a:visited{
+.elementosNav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.elementosNav a:link, a:visited{
     background-color: white;
     color: black;
     border: 2px solid green;
@@ -99,7 +116,7 @@ footer{
     cursor:pointer
 }
 
-.elementos a:hover, a:active{
+.elementosNav a:hover, a:active{
     background-color: green;
     color: white;
     cursor:pointer
