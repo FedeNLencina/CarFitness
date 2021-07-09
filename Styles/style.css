@@ -17,8 +17,9 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /*background-color: cadetblue;*/
-    background-image: url("/Images/About.png");
+    background-image: url("../Images/Fondo6.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 #logo{
