@@ -120,7 +120,28 @@ a.propuesta:hover, a.propuesta:active{
 
 #rutinas{
     background-color: dimgrey;
+   
 }
+
+.padre-rutinas{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.rutina-hija{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+
 
 .foto{
     border:10px solid floralwhite ;
