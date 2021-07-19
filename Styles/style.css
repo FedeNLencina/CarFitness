@@ -15,9 +15,9 @@ body{
 
 .titulo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-image: url("../Images/Fondo6.jpg");
+    flex-direction: column;
+    align-content: space-around;
+    background-image: url("../Images/Fondo4.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -28,12 +28,23 @@ body{
     padding-top: 10%;
     color: antiquewhite;
 }
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10% 0;
+}
+
 #logo{
     border-radius: 100%;
     opacity: 0.9;
+    
 }
 h1{
-    color: indigo;
+    padding: 0% 15%;
+    color: seashell;
+    font-weight: bold;
     font-family: 'Montserrat Alternates', sans-seri; 
     
 }
@@ -55,6 +66,7 @@ li{
 
 li a{
     text-decoration: none;
+    color: white;
     font-size: 20px;
 }
 
@@ -63,6 +75,7 @@ li a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 5% 15%;
     background-image: url("../Images/Fondo2.jpg");
     background-position: center;
     background-size: cover;
@@ -91,6 +104,7 @@ li a{
 #propuestas{
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 20%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -100,6 +114,11 @@ li a{
    
 }
 
+.propuesta{
+    width: 50%;
+    border-radius: 10 px solid darkslategrey;
+    align-items: center;
+}
 a.propuesta:link, a.propuesta:visited{
     color: white;
     border: 10px solid darkslategrey;
@@ -145,16 +164,28 @@ a.propuesta:hover, a.propuesta:active{
     border: 5px solid thistle;
     width: 100%;
     height: 100%;
-    filter: blur(1px);    
+    filter: blur(1px) grayscale(0.5);    
 }
 
 .rutina-hija .contenido{
     position: absolute;
+    z-index: 1;
     bottom:50%;
     left: 25%;
     right: 25%;
+    text-align: center;
 }
 
+.rutina-hija .contenido h3{
+    font-family: 'Montserrat Alternates', sans-seri;
+    font-size: 50px;
+}
+
+.rutina-hija .contenido p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size:20px;
+    color: antiquewhite;
+}
 .foto{
     border:10px solid floralwhite ;
     border-radius: 50px;
@@ -174,30 +205,28 @@ footer{
 }
 
 .navbar{
-    border: 10px solid black;
-    border-radius: 10px
-}
-
-.elementosNav{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-end;
+    
 }
 
-.elementosNav a:link, a:visited{
-    background-color: white;
-    color: black;
-    border: 2px solid green;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor:pointer
+.elementosNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.elementosNav a:hover, a:active{
-    background-color: green;
+.elementosNav li{
+    margin: 5px 20px;
+}
+
+.elementosNav a:hover{
     color: white;
-    cursor:pointer
+    text-align: center;
+    text-decoration: underline antiquewhite;
+    cursor:pointer;
+    
 }
 
 input[type=text]:focus{
