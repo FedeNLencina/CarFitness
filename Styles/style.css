@@ -192,14 +192,12 @@ a.propuesta:hover, a.propuesta:active{
 #rutinas{
     background-color: dimgrey;
     padding: 0%;
-   
-}
-
-.padre-rutinas{
+    margin: 0%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 100%;
+   
 }
 
 .rutina-hija{
