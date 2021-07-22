@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat+Alternates:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="titulo">
         <div class="logo">
-            <img src="Images/Logo1.png" alt="Logo" id="logo">
             <nav class="navbar">
+                <i class="fas fa-dumbbell"></i>
                 <ul class ="elementosNav"> 
                     <li>
                         <a href="#home">Home</a>
@@ -35,16 +36,19 @@
                         <a href="#testimonios">Testimonios</a>
                     </li>
                 </ul>
+                <i class="fas fa-dumbbell"></i>
             </nav>
         </div>
-            
-        <div id="titulo">
-            <h1>Comenza a superarte y lograr el cambio que siempre buscaste!</h1>
-        </div>
         
-        <div id="botonInfo">
-            <button>Mas info!</button>
-        </div>
+        <div class="tituloPrincipal">
+             <div id="titulo">
+                 <h1>Comenza a superarte y lograr el cambio que siempre buscaste!</h1>
+            </div>
+                
+            <div id="botonInfo">
+                <button>Mas info!</button>
+            </div>   
+        </div>   
     </div>
 
 
@@ -85,6 +89,7 @@
        
             <div class="rutina-hija">
                 <div class="contenido">
+                    <i class="fas fa-dumbbell"></i>
                     <h3>Personalizados</h3>
                     <p>Entrenamientos personalizados en funcion del resultado que buscas: aumentar masa muscular,
                     fuerza o trabajo aerobico personalizado</p>
@@ -94,6 +99,7 @@
             
             <div class="rutina-hija">
                 <div class="contenido">
+                    <i class="fas fa-user-friends"></i>
                     <h3>Grupales</h3>
                     <p>Entrenamientos en conjunto con otras personas realizando distintos tipos de ejercicios, respetando los protocolos de seguridad frente al Covid-19</p>
                 </div>
@@ -102,6 +108,7 @@
             
             <div class="rutina-hija">
                 <div class="contenido">
+                    <i class="fas fa-running"></i>
                     <h3>Funcionales</h3>
                     <p>Entrenamientos físicos que te permiten entrenar tus músculos para trabajar juntos y prepararlos para realizar tareas cotidianas con mayor facilidad y sin lesiones, ya sea en casa, en el trabajo o durante las sesiones deportivas.</p>
                 </div>
@@ -121,9 +128,9 @@
             <label>Tipo de entrenamiento:</label>
             <br>
             <div class="checkBox">
-                <li><input type="checkbox"><label>Personalizado</label></li>
-                <li><input type="checkbox"><label>Funcional</label></li>    
                 <li><input type="checkbox"><label>Grupales</label></li>
+                <li><input type="checkbox"><label>Funcional</label></li>    
+                <li><input type="checkbox"><label>Personalizado</label></li>
             </div>
             <br>
             <div class="calendario">
