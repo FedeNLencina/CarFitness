@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat+Alternates:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="titulo">
         <div class="logo">
             <nav class="navbar">
-                <i class="fas fa-dumbbell"></i>
+                <img id="logo1" src="Images/Logo1.png" alt="Logo">
                 <ul class ="elementosNav"> 
                     <li>
                         <a href="#home">Home</a>
@@ -29,14 +32,9 @@
                     <li>
                         <a href="#rutinas">Entrenamientos</a>
                     </li>
-                    <li>
-                        <a href="#preguntas">Preguntas Frecuentes</a>
-                    </li>
-                    <li>
-                        <a href="#testimonios">Testimonios</a>
-                    </li>
+                    
                 </ul>
-                <i class="fas fa-dumbbell"></i>
+                <img id="logo2" src="Images/Logo1.png" alt="Logo">
             </nav>
         </div>
         
@@ -65,61 +63,68 @@
         
     </div>
     
-    <div id="propuestas"> 
+    <div id="contenedor_propuestas"> 
+        <div id="propuestas"></div>
 
-        <ul class="propuesta">
-            <li>
-                <a class="propuesta" href="#">Armo tu plan de entrenamiento según objetivos.</a>
-            </li> 
-            <li>
-                <a class="propuesta" href="#">Clases personalizadas.</a>
-            </li>
-            <li>
-                <a class="propuesta"href="#">Clases Grupales.</a>
-            </li>
-            <li>
+            <ul class="propuesta">
+                <li>
+                    <a class="propuesta" href="#">Armo tu plan de entrenamiento según objetivos.</a>
+                </li> 
+                <li>
+                    <a class="propuesta" href="#">Clases personalizadas.</a>
+                </li>
+                <li>
+                    <a class="propuesta"href="#">Clases Grupales.</a>
+                </li>
+                <li>
                 <a class="propuesta" href="#">Entrenamiento para todas las edades.</a>
             </li>
         </ul>
-
+        
      </div>
 
 
     <div id="rutinas">
        
             <div class="rutina-hija">
+                <div id="fondoPersonalizado"></div>
+
                 <div class="contenido">
                     <i class="fas fa-dumbbell"></i>
                     <h3>Personalizados</h3>
                     <p>Entrenamientos personalizados en funcion del resultado que buscas: aumentar masa muscular,
                     fuerza o trabajo aerobico personalizado</p>
                 </div> 
-                <img src="Images/Personalizado3.png" alt="Personalizado">
+                
             </div>
             
             <div class="rutina-hija">
+                <div id="fondoGrupal"></div>
+
                 <div class="contenido">
                     <i class="fas fa-user-friends"></i>
                     <h3>Grupales</h3>
                     <p>Entrenamientos en conjunto con otras personas realizando distintos tipos de ejercicios, respetando los protocolos de seguridad frente al Covid-19</p>
                 </div>
-                <img src="Images/Personalizado1.png" alt="Grupales">
+                
             </div>
             
             <div class="rutina-hija">
+                <div id="fondoFuncional"></div>
+
                 <div class="contenido">
                     <i class="fas fa-running"></i>
                     <h3>Funcionales</h3>
                     <p>Entrenamientos físicos que te permiten entrenar tus músculos para trabajar juntos y prepararlos para realizar tareas cotidianas con mayor facilidad y sin lesiones, ya sea en casa, en el trabajo o durante las sesiones deportivas.</p>
                 </div>
-                <img src="Images/Cardio3.jpg" alt="Funcional">
+                
             </div>
 
         
     </div>
     
     <div id=formulario>
-        <img src="Images/Cardio2.jpg">
+        <div id="fondo_formulario"></div>
         <form>
             <h3>Comenza a superarte!</h3>
             <input type="text" placeholder="Ingrese su nombre">
@@ -148,11 +153,38 @@
         
         <div id="contacto">
             <p>Localidad: Los Polvorines</p>
-            <p>Tel: 1135174002</p>
-            <a href="https://www.instagram.com/cartripodi.fit/" target="blank">Instagram</a>
+            <div class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <p>1135174002</p>
+            </div>
+            <div class="redes">
+                <h3>Redes</h3>
+                <a href="https://www.instagram.com/cartripodi.fit/" target="blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
 
     </footer>
 
+    <div class="logo2">
+        <nav class="navbarbottom">
+            <i class="fas fa-dumbbell"></i>
+            <ul class ="elementosNavBottom"> 
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+                <li>
+                    <a href="#rutinas">Entrenamientos</a>
+                </li>
+               
+            </ul>
+            <i class="fas fa-dumbbell"></i>
+        </nav>
+    </div>
 </body>
 </html>

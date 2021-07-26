@@ -1,6 +1,7 @@
 /*
 font-family: 'Cormorant Garamond', serif; Para Contenido.
 font-family: 'Montserrat Alternates', sans-seri; Para Titulos.
+font-family: 'Chivo', sans-serif;
 */
 
 * {
@@ -62,6 +63,15 @@ body{
     border-color: indianred;
     color:honeydew;
 }
+#logo1{
+    width: 10%;
+    border-radius: 100%;
+}
+
+#logo2{
+    width: 10%;
+    border-radius: 100%;
+}
 .logo{
     display: flex;
     flex-direction: row;
@@ -104,7 +114,7 @@ li a{
     background-image: url("../Images/FondoHero3.jpg");
     background-position: center;
     background-size: cover;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Chivo', sans-serif;
     font-size: 25px;
 }
 
@@ -123,7 +133,7 @@ li a{
 
 #about p{
     color: rgb(245, 241, 241);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Chivo', sans-serif;
     margin: 25px;
     padding-top:10% ;
     height: 500px;
@@ -152,23 +162,38 @@ li a{
     box-shadow: 0px 9px 37px 23px #000000;
 }
 
-#propuestas{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 20%;
+#contenedor_propuestas{
+    height:500px;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+#propuestas{
     background-image: url("../Images/Sogas1.jpg");
     background-position: center;
     background-size: cover;
-   
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
+
 .propuesta{
-    width: 50%;
-    border-radius: 10 px solid darkslategrey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.propuesta li{
+    width: 25%;
+    border-radius: 10px solid darkslategrey;
 }
 a.propuesta:link, a.propuesta:visited{
     color: white;
@@ -200,10 +225,11 @@ a.propuesta:hover, a.propuesta:active{
     background-position: center;
     background-size: cover;
     
-   
+    
 }
 
 .rutina-hija{
+    height: 500px;
     padding: 100px 0%;
     display: flex;
     flex-direction: column;
@@ -214,18 +240,7 @@ a.propuesta:hover, a.propuesta:active{
     
   
 }
-
-
-.rutina-hija img{
-    border: 5px solid rgb(246, 243, 246);
-    width: 100%;
-    height: 100%;
-    filter: grayscale(0.4);    
-}
-
 .rutina-hija .contenido{
-    position: absolute;
-    z-index: 1;
     text-align: center;
     
 }
@@ -241,11 +256,47 @@ a.propuesta:hover, a.propuesta:active{
 }
 
 .rutina-hija .contenido p{
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Chivo', sans-serif;
     font-size:20px;
     color: white;
     
 }
+
+#fondoPersonalizado{
+    background-image: url("../Images/Personalizado3.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(0.4);
+
+    
+}
+#fondoGrupal{
+    background-image: url("../Images/Personalizado1.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(0.4);
+    width: 100%;
+    height: 100%;
+}
+
+#fondoFuncional{
+    background-image: url("../Images/Fondo2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(0.4);
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .foto{
     border:10px solid floralwhite ;
@@ -271,22 +322,24 @@ a.propuesta:hover, a.propuesta:active{
     margin-bottom: 20px;
 }
 
+#fondo_formulario{
+    background-image: url("../Images/Cardio2.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(1px) grayscale(0.8);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 1;
     width: 100%;
     
-}
-
-#formulario img{
-    width: 100%;
-    height: 1000px;
-    filter: blur(1px) grayscale(0.8);
-
 }
 
 
@@ -349,7 +402,52 @@ form button:hover{
     text-decoration: none;
     color: white;
 }
+.logo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
 
+.navbarbottom{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.elementosNavBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 50%;
+    
+}
+.elementosNavBottom a:hover{
+    color: white;
+    cursor:pointer;
+    border-bottom: 2px solid white;
+    transition: 500ms;
+    transition-timing-function: ease-out;
+    font-size: 25px;
+    transform: scaleZ(1.2)
+   
+}
+.navbarbottom i{
+    font-size: 50px;
+    color: white;
+}
+
+.redes i{
+    font-size: 40px;
+    color: white;
+    
+}
+
+.whatsapp i{
+    font-size: 40px;
+    color: white;
+}
 .navbar{
     display: flex;
     flex-direction: row;
@@ -371,16 +469,85 @@ form button:hover{
 }
 
 .elementosNav li{
+    text-decoration: none;
+    
     margin: 50px 0;
     transition-delay: 500ms;
-    transition-duration: 1s;
+    transition-duration: 500ms;
     
+}
+.elementosNav a{
+    text-decoration: none;
+    color:white;
+    transition: 500ms;
+    transition-timing-function: ease-out;
 }
 
 .elementosNav a:hover{
     color: white;
     cursor:pointer;
     border-bottom: 2px solid white;
+    transition: 500ms;
+    transition-timing-function: ease-out;
+    font-size: 25px;
+    transform: scaleZ(1.2)
    
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    #logo2{
+        display: none;
+    }
+    #logo1{
+        width: 50%;
+        
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    
+    .hero{
+        flex-direction: column;
+        padding: 0;
+    }
+    .hero #perfil {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #about p{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 40px;
+        padding:10px ;
+    }
+    #rutinas{
+        flex-direction: column;
+    }
+
+    .rutina-hija{
+        width: 100%;
+    }
+    .rutina-hija img{
+        border: 0;
+    }
+
+     
+    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
