@@ -523,7 +523,7 @@ form button:hover{
     
     #logo4{
         width: 50%;
-        padding-top: 30px;
+        margin-top: 30px;
     }
     .navbar{
         flex-direction: column;
