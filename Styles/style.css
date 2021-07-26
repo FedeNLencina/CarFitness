@@ -450,6 +450,12 @@ form button:hover{
     color: white;
 }
 
+.localidad i{
+    font-size: 40px;
+    color: white;
+    
+}
+
 .redes i{
     font-size: 40px;
     color: white;
