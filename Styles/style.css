@@ -130,7 +130,7 @@ li a{
 #about{
     border: 2px solid white;
     border-radius: 20px;
-    height: 600px;
+    
     margin: 20px 0px;
     padding: 30px;
     display: flex;
@@ -156,8 +156,6 @@ li a{
     color: rgb(245, 241, 241);
     font-family: 'Chivo', sans-serif;
     margin: 25px;
-    height: 500px;
-    width: 500px;
 }
 
 #about p:hover{
@@ -166,12 +164,11 @@ li a{
     transform: scale(1.1);
 }
 
-
+.perfil{
+    text-align: center;
+}
 #perfil{
-    width: 500px;
-    height: 500px; 
-    margin-top: 100px;
-    margin-left: 50px;
+    width: 80%; 
     border: 2px solid white;
     border-radius: 50%;
 }
@@ -362,7 +359,7 @@ a.propuesta:hover, a.propuesta:active{
 }
 
 .contenido_description p{
-    width: 50%;
+    width: 100%;
 }
 
 #fondo_formulario{
@@ -669,14 +666,6 @@ form button:hover{
     }
 
     #about {
-        border: 2px solid white;
-        border-radius: 20px;
-        height: 412px;
-        margin: 20px 0px;
-        padding: 9px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin: 20px;
     }
 
@@ -695,12 +684,7 @@ form button:hover{
         
     }
 
-    #perfil {
-        width: 500px;
-        margin: 50px;
-        border: 2px solid white;
-        border-radius: 50%;
-    }
+    
 
     
 
@@ -779,14 +763,11 @@ form button:hover{
         margin: 20px 23px;
     }    
 
-    #perfil {
-        margin: 50px;
-        border: 2px solid white;
-        border-radius: 50%;
-    }
 
     .hero{
+        
         flex-direction: column;
+        padding: 50px;
     }
 
     #rutinas{
@@ -803,32 +784,40 @@ form button:hover{
         width: 90%;
         margin: 10px 0px;
     }
+
+    .contenido_description p {
+        width: 100%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .hero{
         align-items: center;
+        padding: 50px;
     }
 
     #about {
-        height: 490px;
-        padding: 66px;
         align-items: center;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .hero{
-        flex-direction: row;
-    }
+    
+    
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .hero{
+        flex-direction: row;
+    }
 
+    #about{
+        width: 50%;
+    }
 }
 
 
