@@ -725,6 +725,7 @@ form button:hover{
 
     form{
         font-size: 21px;
+        width: 90%;
         
     }
 
@@ -732,15 +733,10 @@ form button:hover{
         color: black;
     }
 
+    
     input[type=text] {
-        background-color: transparent;
-        border: 0;
-        border-bottom: 1px solid white;
-        outline: none;
-        color: black;
-        
+        width: 80%;
     }
-
     #contacto{
         width: 100%;
     }
