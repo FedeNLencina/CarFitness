@@ -675,12 +675,13 @@ form button:hover{
         text-align: center;
         border: 0px;
         margin: 28px;
+        font-size: 21px;
     }
 
     #about p {
         color: rgb(245, 241, 241);
         font-family: 'Chivo', sans-serif;
-        font-size: 20px;
+        font-size: 12px;
         
     }
 
@@ -689,7 +690,7 @@ form button:hover{
     
 
     #propuesta li {
-        width: 80%;
+        width: 93%;
     }
 
     #rutinas {
