@@ -667,6 +667,7 @@ form button:hover{
 
     #about {
         margin: 20px;
+        padding: 3px;
     }
 
     #about h1 {
