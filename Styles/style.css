@@ -816,6 +816,10 @@ form button:hover{
     #about{
         width: 50%;
     }
+
+    .contenido_description p {
+        width: 50%;
+    }
 }
 
 
