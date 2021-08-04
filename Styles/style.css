@@ -676,13 +676,13 @@ form button:hover{
         text-align: center;
         border: 0px;
         margin: 28px;
-        font-size: 21px;
+        font-size: 28px;
     }
 
     #about p {
         color: rgb(245, 241, 241);
         font-family: 'Chivo', sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         
     }
 
